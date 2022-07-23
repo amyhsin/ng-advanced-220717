@@ -23,6 +23,11 @@ export class ColorsComponent implements OnInit {
     this.route.queryParamMap.subscribe(param => {
       this.name = param.get('name')
     })
+
+    this.route.data.subscribe(data => {
+      let key = data['key'];
+      console.log(key);
+    });
   }
 
 }
