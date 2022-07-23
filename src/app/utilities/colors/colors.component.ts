@@ -31,4 +31,11 @@ export class ColorsComponent implements OnInit {
     });
   }
 
+  counter(num: number){
+    this.router.navigate(['../', (Number(this.type || 0)) + num], {
+      queryParamsHandling: 'preserve',
+      relativeTo: this.route
+    })
+  }
+
 }
