@@ -14,6 +14,7 @@ export class ColorsComponent implements OnInit {
 
   type: string | null = '';
   name: string | null = '';
+  data: any = {};
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(param => {
@@ -25,8 +26,8 @@ export class ColorsComponent implements OnInit {
     })
 
     this.route.data.subscribe(data => {
-      let key = data['key'];
-      console.log(key);
+      this.data = data['key'];
+      console.log(this.data);
     });
   }
 
