@@ -22,6 +22,10 @@ const routes: Routes = [
       //     { path: 'colors/:type', component: ColorsComponent, data: {key: 'something'} }
       //   ]
       // },
+      {
+        path: 'utilities', 
+        loadChildren: () => import('./utilities/utilities.module').then(m => m.UtilitiesModule)
+      },
     ]
   },
 ];
