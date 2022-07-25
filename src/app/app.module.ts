@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
-import { ColorsComponent } from './utilities/colors/colors.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 
@@ -16,7 +15,6 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     Page1Component,
     Page2Component,
-    ColorsComponent,
     LayoutComponent,
     LoginComponent
   ],
