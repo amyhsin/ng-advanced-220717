@@ -14,8 +14,8 @@ const routes: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: '/dashboard' },
       { path: 'dashboard', component: DashboardComponent, title: 'SB Admin 2 - Dashboard' },
-      { path: 'page1', component: Page1Component, title: 'SB Admin 2 - Page1' },
-      { path: 'page2', component: Page2Component, title: 'SB Admin 2 - Page2' },
+      { path: 'page1', component: Page1Component},
+      { path: 'page2', component: Page2Component},
       // {
       //   path: 'utilities', 
       //   children: [
@@ -32,7 +32,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules
+    // preloadingStrategy: PreloadAllModules
   })],
   exports: [RouterModule]
 })
